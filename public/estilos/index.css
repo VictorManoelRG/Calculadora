@@ -11,8 +11,8 @@
 }
 
 .calculadora {
-    position: absolute;
-    display: flex;
+    position: relative;
+    display: auto;
     justify-content: center;
     background-color: #1a0c12;
     height: 24%;
@@ -43,5 +43,5 @@ body {
 
 #Menu{
     margin-left: 5%;
-    margin-top: 1%;
+    margin-top: 5%;
 }

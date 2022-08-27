@@ -34,10 +34,6 @@ function resolverConta() {
         document.calc.visor.value = '';
     }
 
-
-    aux = document.calc.visor.value;
-
-
     if(document.calc.visor.value.slice(-1) === "+" || document.calc.visor.value.slice(-1) === "-" ||
     document.calc.visor.value.slice(-1) === "*" || document.calc.visor.value.slice(-1) === "/"){
         window.alert("ERRO. Repita o calculo.")
@@ -45,10 +41,9 @@ function resolverConta() {
     }
 
 
-    conta = eval(document.calc.visor.value);
-    if (str === undefined) {
+    if (eval(document.calc.visor.value) === undefined) {
         window.alert("ERRO. Repita o calculo.")
         document.calc.visor.value = "";
     }
-    else document.calc.visor.value = conta;
+    else document.calc.visor.value = eval(document.calc.visor.value);;
 }
